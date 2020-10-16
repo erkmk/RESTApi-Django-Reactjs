@@ -1,5 +1,5 @@
 ''' Serializer: it allow us to converted data in our database into easy and 
-understadable way then we can render it into json  parse it back it to the our application i.e(React app) '''
+understadable way then we can render it into json parse it back it to the our application i.e(React app) '''
 from rest_framework import serializers
 from blog.models import Post
 

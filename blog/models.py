@@ -38,7 +38,7 @@ class Post(models.Model):
 
     '''we are using slug here so that we can slugify the title, 
      we can utilizing this as a web identifying of each post. so instead of using the id for post
-     we use slug to identify the collected the data'''
+     we use slug to identify the collected data'''
     slug = models.SlugField(max_length=250, unique_for_date='published')
 
     published = models.DateTimeField(default=timezone.now)
@@ -53,7 +53,7 @@ class Post(models.Model):
 
     ''' here we specify the different model manager '''
     objects = models.Manager() #default manager
-    postobjects = PostObjects() #Custom manager
+    postobjects = PostObjects() #Custom manager, see above we have make class name PostObject
 
     ''' we can return in ascending and descending order '''
     class Meta:
