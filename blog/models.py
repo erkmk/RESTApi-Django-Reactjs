@@ -8,6 +8,8 @@ from django.utils import timezone
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
+    #https://stackoverflow.com/questions/45135263/class-has-no-objects-member
+    objects = models.Manager()
 
 
     def __str__(self):
